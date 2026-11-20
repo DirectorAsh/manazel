@@ -14,76 +14,60 @@
 </head>
 <body>
 
-<div class="veil" aria-hidden="true">
-  <div class="veil__slats"></div>
-  <img class="veil__mark" src="assets/manazel-logo.svg" alt="">
-</div>
+<div class="veil" aria-hidden="true"><img src="assets/manazel-logo.svg" alt=""></div>
 
 <header class="nav" id="nav">
-  <a class="nav__logo" href="#top" aria-label="منازل العقارية">
-    <img src="assets/manazel-logo.svg" alt="منازل العقارية" width="62" height="56">
-  </a>
+  <a class="nav__logo" href="#top" aria-label="منازل العقارية"><img src="assets/manazel-logo.svg" alt="منازل العقارية" width="58" height="52"></a>
   <nav class="nav__links" aria-label="أقسام الصفحة">
-    <a href="#project">المشروع</a>
-    <a href="#types">أنواع الوحدات</a>
-    <a href="#units">الوحدات والأسعار</a>
+    <a href="#types">الوحدات</a>
+    <a href="#prices">الأسعار</a>
     <a href="#gallery">الصور</a>
     <a href="#warranty">الضمانات</a>
     <a href="#location">الموقع</a>
   </nav>
-  <a class="btn btn--amber nav__cta" href="#contact">سجّل اهتمامك</a>
+  <a class="btn nav__cta" href="#contact">احجز زيارة</a>
 </header>
 
 <main id="top">
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero__media"><img src="assets/img/hero.webp" alt="واجهات مشروع زرقاء اليمامة وقت الغروب" fetchpriority="high"></div>
-    <div class="hero__shade"></div>
     <div class="hero__body wrap">
-      <p class="hero__by">من مشاريع منازل العقارية</p>
-      <h1 class="hero__title">زرقاء اليمامة</h1>
-      <p class="hero__sub">تاون هاوس وبنتهاوس وأدوار سكنية في حي القادسية، شرق الرياض.</p>
-      <div class="hero__row">
-        <div class="hero__actions">
-          <a class="btn btn--amber" href="#contact">سجّل اهتمامك</a>
-          <a class="btn btn--ghost" href="#units">شاهد الوحدات والأسعار</a>
-        </div>
-        <dl class="hero__facts">
-          <div><dt>الأسعار تبدأ من</dt><dd><span class="num">690,000</span> ريال</dd></div>
-          <div><dt>المساحات</dt><dd><span class="num">216</span> إلى <span class="num">640</span> م²</dd></div>
-          <div><dt>الوحدات</dt><dd><span class="num">36</span> وحدة</dd></div>
-        </dl>
+      <h1 class="hero__title"><span><i>زرقاء</i></span> <span><i>اليمامة</i></span></h1>
+      <div class="hero__foot">
+        <p class="hero__sub">تاون هاوس وبنتهاوس وأدوار سكنية<br>في حي القادسية، شرق الرياض.</p>
+        <p class="hero__fact">الأسعار من <b class="num">690,000</b> ريال</p>
+        <p class="hero__by">من مشاريع منازل العقارية</p>
       </div>
     </div>
   </section>
 
-  <!-- PROJECT -->
-  <section class="sec sec--paper" id="project">
+  <section class="sec statement" id="project">
     <div class="wrap">
-      <div class="head" data-reveal>
-        <h2 class="tab">المشروع</h2>
-        <span class="stripes" aria-hidden="true"></span>
-      </div>
-      <div class="intro">
-        <div class="intro__text">
-          <p class="intro__lead">36 وحدة سكنية بواجهات حجرية فاتحة وإضاءة خارجية دافئة، في حي القادسية شرق الرياض.</p>
-          <div class="intro__side">
-            <p>اختر ما يناسب عائلتك: تاون هاوس، أو بنتهاوس، أو دور كامل في الأرضي أو الأول أو الثاني. المساحات من 216 إلى 640 م²، والأسعار من 690,000 إلى 1,600,000 ريال.</p>
-            <p>كل الصور في هذه الصفحة حقيقية، من موقع المشروع نفسه.</p>
-          </div>
-        </div>
-        <div class="intro__img"><img src="assets/img/intro.webp" alt="واجهة أحد المباني ومدخله وقت الغروب" loading="lazy"></div>
-      </div>
+      <p class="statement__text">36 وحدة سكنية بواجهات حجرية فاتحة وإضاءة دافئة، في صف واحد من حي القادسية.</p>
+      <dl class="facts">
+        <div><dt>الأسعار من</dt><dd><span class="num">690,000</span><small>ريال</small></dd></div>
+        <div><dt>المساحات</dt><dd><span class="num">216</span><small>إلى</small><span class="num">640</span><small>م²</small></dd></div>
+        <div><dt>الوحدات</dt><dd><span class="num">36</span><small>وحدة، 34 منها متاحة</small></dd></div>
+      </dl>
     </div>
   </section>
 
-  <!-- WINDOW -->
+  <section class="sec duo">
+    <div class="wrap duo__grid">
+      <figure class="duo__a" data-unveil><img src="assets/img/wide.webp" alt="واجهة أمامية وفناء المدخل وقت الغروب" loading="lazy"></figure>
+      <div class="duo__text">
+        <h2 class="h2">حجر فاتح،<br>وضوء دافئ.</h2>
+        <p>واجهات بتكسية حجرية، ونوافذ طولية بإطارات داكنة، وإضاءة مخفية تحدد خطوط المبنى مع الغروب. لكل وحدة مدخلها وبوابتها.</p>
+      </div>
+      <figure class="duo__b" data-unveil data-par="0.07"><img src="assets/img/tall2.webp" alt="المصعد والدرج الداخلي" loading="lazy"></figure>
+    </div>
+  </section>
+
   <section class="window" id="inside" aria-label="المشروع من الداخل">
     <div class="window__stage">
-      <div class="window__intro wrap">
+      <div class="window__intro">
         <h2>انظر من النافذة</h2>
-        <p>واصل النزول، وادخل البيت.</p>
       </div>
       <div class="window__lens">
         <img src="assets/img/window.webp" alt="صالة واسعة بإضاءة مخفية ونوافذ بإطارات سوداء" loading="lazy">
@@ -91,93 +75,91 @@
       </div>
       <div class="window__caption wrap">
         <h3>من الداخل</h3>
-        <ul>
-          <li>صالات مفتوحة ونوافذ واسعة</li>
-          <li>إضاءة مخفية في الأسقف والدرج</li>
-          <li>مصعد في المبنى</li>
+        <p>صالات مفتوحة ونوافذ واسعة. إضاءة مخفية في الأسقف والدرج. مصعد في المبنى.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec types" id="types">
+    <div class="wrap">
+      <header class="sec__head"><h2 class="label">أنواع الوحدات</h2></header>
+      <div class="types__grid">
+        <ul class="types__list" id="typesList">
+          <li class="is-on" data-i="0">
+            <button class="types__name">تاون هاوس</button>
+            <div class="types__more"><div>
+              <img src="assets/img/th.webp" alt="واجهة تاون هاوس في المشروع" loading="lazy">
+              <dl>
+                <div><dt>السعر من</dt><dd><span class="num">1,150,000</span> ريال</dd></div>
+                <div><dt>المساحة</dt><dd><span class="num">338</span> إلى <span class="num">528</span> م²</dd></div>
+                <div><dt>العدد</dt><dd><span class="num">6</span> وحدات</dd></div>
+              </dl>
+              <a class="link" href="#prices" data-filter="townhouse">أسعار التاون هاوس</a>
+            </div></div>
+          </li>
+          <li data-i="1">
+            <button class="types__name">بنتهاوس</button>
+            <div class="types__more"><div>
+              <img src="assets/img/ph.webp" alt="بنتهاوس في أعلى المبنى بمظلة على السطح" loading="lazy">
+              <dl>
+                <div><dt>السعر من</dt><dd><span class="num">1,150,000</span> ريال</dd></div>
+                <div><dt>المساحة</dt><dd><span class="num">338</span> إلى <span class="num">640</span> م²</dd></div>
+                <div><dt>العدد</dt><dd><span class="num">6</span> وحدات</dd></div>
+              </dl>
+              <a class="link" href="#prices" data-filter="penthouse">أسعار البنتهاوس</a>
+            </div></div>
+          </li>
+          <li data-i="2">
+            <button class="types__name">أدوار</button>
+            <div class="types__more"><div>
+              <img src="assets/img/fl.webp" alt="صالة أحد الأدوار السكنية" loading="lazy">
+              <dl>
+                <div><dt>السعر من</dt><dd><span class="num">690,000</span> ريال</dd></div>
+                <div><dt>المساحة</dt><dd><span class="num">216</span> إلى <span class="num">355</span> م²</dd></div>
+                <div><dt>العدد</dt><dd><span class="num">24</span> دورًا</dd></div>
+              </dl>
+              <a class="link" href="#prices" data-filter="floors">أسعار الأدوار</a>
+            </div></div>
+          </li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- TYPES -->
-  <section class="sec sec--ink" id="types">
-    <div class="wrap">
-      <div class="head head--onink" data-reveal>
-        <h2 class="tab">أنواع الوحدات</h2>
-        <span class="stripes" aria-hidden="true"></span>
-      </div>
-      <div class="types">
-        <article class="type">
-          <div class="type__img"><img src="assets/img/th.webp" alt="واجهة تاون هاوس في المشروع" loading="lazy"></div>
-          <div class="type__body">
-            <h3>تاون هاوس</h3>
-            <p class="type__price">من <span class="num">1,150,000</span> ريال</p>
-            <dl>
-              <div><dt>المساحة</dt><dd><span class="num">338</span> إلى <span class="num">528</span> م²</dd></div>
-              <div><dt>العدد</dt><dd><span class="num">6</span> وحدات</dd></div>
-            </dl>
-            <button class="link" data-filter="townhouse">اعرض وحدات التاون هاوس</button>
-          </div>
-        </article>
-        <article class="type">
-          <div class="type__img"><img src="assets/img/ph.webp" alt="بنتهاوس في أعلى المبنى بمظلة على السطح" loading="lazy"></div>
-          <div class="type__body">
-            <h3>بنتهاوس</h3>
-            <p class="type__price">من <span class="num">1,150,000</span> ريال</p>
-            <dl>
-              <div><dt>المساحة</dt><dd><span class="num">338</span> إلى <span class="num">640</span> م²</dd></div>
-              <div><dt>العدد</dt><dd><span class="num">6</span> وحدات</dd></div>
-            </dl>
-            <button class="link" data-filter="penthouse">اعرض وحدات البنتهاوس</button>
-          </div>
-        </article>
-        <article class="type">
-          <div class="type__img"><img src="assets/img/fl.webp" alt="صالة أحد الأدوار السكنية" loading="lazy"></div>
-          <div class="type__body">
-            <h3>أدوار</h3>
-            <p class="type__price">من <span class="num">690,000</span> ريال</p>
-            <dl>
-              <div><dt>المساحة</dt><dd><span class="num">216</span> إلى <span class="num">355</span> م²</dd></div>
-              <div><dt>العدد</dt><dd><span class="num">24</span> دورًا</dd></div>
-            </dl>
-            <button class="link" data-filter="floors">اعرض الأدوار</button>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- UNITS -->
-  <section class="sec sec--paper" id="units">
-    <div class="wrap">
-      <div class="head" data-reveal>
-        <h2 class="tab">الوحدات والأسعار</h2>
-        <span class="stripes" aria-hidden="true"></span>
-      </div>
-      <div class="units__top">
-        <p class="units__count"><span class="num" id="availCount">34</span> وحدة متاحة من <span class="num">36</span></p>
-        <div class="chips" role="group" aria-label="تصفية الوحدات">
-          <button class="chip is-on" data-f="all">الكل</button>
-          <button class="chip" data-f="townhouse">تاون هاوس</button>
-          <button class="chip" data-f="penthouse">بنتهاوس</button>
-          <button class="chip" data-f="ground">دور أرضي</button>
-          <button class="chip" data-f="first">دور أول</button>
-          <button class="chip" data-f="second">دور ثانٍ</button>
+        <div class="types__media" id="typesMedia" aria-hidden="true">
+          <img class="is-on" src="assets/img/th.webp" alt="">
+          <img src="assets/img/ph.webp" alt="" loading="lazy">
+          <img src="assets/img/fl.webp" alt="" loading="lazy">
         </div>
       </div>
-      <div class="board" id="board"></div>
-      <p class="units__note">اضغط على أي وحدة متاحة لتسأل عنها عبر واتساب. الأسعار والتوفر حسب آخر تحديث في 20 نوفمبر 2026.</p>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="sec sec--ink sec--gallery" id="gallery">
+  <section class="sec prices" id="prices">
     <div class="wrap">
-      <div class="head head--onink" data-reveal>
-        <h2 class="tab">الصور</h2>
-        <span class="stripes" aria-hidden="true"></span>
-      </div>
+      <header class="sec__head">
+        <h2 class="label">الوحدات والأسعار</h2>
+        <div class="tabs" role="group" aria-label="تصفية الوحدات">
+          <button class="tab is-on" data-f="all">الكل</button>
+          <button class="tab" data-f="townhouse">تاون هاوس</button>
+          <button class="tab" data-f="penthouse">بنتهاوس</button>
+          <button class="tab" data-f="ground">أرضي</button>
+          <button class="tab" data-f="first">أول</button>
+          <button class="tab" data-f="second">ثانٍ</button>
+        </div>
+      </header>
+      <p class="prices__count"><span class="num" id="availCount">34</span> وحدة متاحة</p>
+      <div class="ledger" id="ledger"></div>
+      <p class="note">اضغط على أي وحدة متاحة لتسأل عنها عبر واتساب. الأسعار والتوفر حسب تحديث 20 نوفمبر 2026.</p>
+    </div>
+  </section>
+
+  <section class="sec gallery" id="gallery">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 class="label">الصور</h2>
+        <div class="gallery__ctrl">
+          <span class="num" id="gCount">1 / 12</span>
+          <button class="arrow" id="prev" aria-label="الصورة السابقة"><svg viewBox="0 0 40 12" width="40" height="12"><path d="M0 6h38M33 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <button class="arrow" id="next" aria-label="الصورة التالية"><svg viewBox="0 0 40 12" width="40" height="12"><path d="M40 6H2M7 1L2 6l5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+        </div>
+      </header>
     </div>
     <div class="strip" id="strip" tabindex="0" aria-label="معرض صور المشروع">
       <button class="shot"><img src="assets/img/g1.webp" alt="الواجهات وقت الغروب" loading="lazy"></button>
@@ -193,69 +175,52 @@
       <button class="shot shot--tall"><img src="assets/img/g11.webp" alt="مغسلة رخامية" loading="lazy"></button>
       <button class="shot"><img src="assets/img/g12.webp" alt="المشروع نهارًا" loading="lazy"></button>
     </div>
-    <div class="wrap strip__ctrl">
-      <button class="round" id="prev" aria-label="الصورة السابقة"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button class="round" id="next" aria-label="الصورة التالية"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    </div>
   </section>
 
-  <!-- WARRANTY -->
-  <section class="sec sec--sage" id="warranty">
-    <div class="wrap">
-      <div class="head head--onsage" data-reveal>
-        <h2 class="tab">الضمانات</h2>
-        <span class="stripes" aria-hidden="true"></span>
-      </div>
-      <p class="warranty__lead">ضمانات تصل إلى 25 سنة.</p>
-      <ul class="bars" id="bars">
-        <li style="--y:25"><span class="bars__label">الطبلونات والقواطع الكهربائية</span><span class="bars__track"><i></i></span><span class="bars__val"><span class="num">25</span> سنة</span></li>
-        <li style="--y:25"><span class="bars__label">الأفياش والمفاتيح</span><span class="bars__track"><i></i></span><span class="bars__val"><span class="num">25</span> سنة</span></li>
-        <li style="--y:5"><span class="bars__label">الأبواب</span><span class="bars__track"><i></i></span><span class="bars__val"><span class="num">5</span> سنوات</span></li>
-        <li style="--y:5"><span class="bars__label">مراوح الشفط</span><span class="bars__track"><i></i></span><span class="bars__val"><span class="num">5</span> سنوات</span></li>
-        <li style="--y:5"><span class="bars__label">الإنارة الداخلية</span><span class="bars__track"><i></i></span><span class="bars__val"><span class="num">5</span> سنوات</span></li>
-        <li style="--y:2"><span class="bars__label">المصاعد</span><span class="bars__track"><i></i></span><span class="bars__val">سنتان</span></li>
-        <li style="--y:2"><span class="bars__label">الإنارة الخارجية</span><span class="bars__track"><i></i></span><span class="bars__val">سنتان</span></li>
-        <li style="--y:2"><span class="bars__label">الأبواب والنوافذ الأوتوماتيكية</span><span class="bars__track"><i></i></span><span class="bars__val">سنتان</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- LOCATION -->
-  <section class="sec sec--paper" id="location">
-    <div class="wrap">
-      <div class="head" data-reveal>
-        <h2 class="tab">الموقع</h2>
-        <span class="stripes" aria-hidden="true"></span>
-      </div>
-      <div class="loc">
-        <div class="loc__text">
-          <p class="loc__lead">حي القادسية، شرق الرياض.</p>
-          <a class="btn btn--ink" href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A+%D8%A7%D9%84%D9%82%D8%A7%D8%AF%D8%B3%D9%8A%D8%A9+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener">افتح الحي في خرائط قوقل</a>
-        </div>
-        <ul class="near">
-          <li><span class="near__min"><span class="num">20</span><small>دقيقة</small></span><span>جامعة الأميرة نورة بنت عبدالرحمن</span></li>
-          <li><span class="near__min"><span class="num">27</span><small>دقيقة</small></span><span>مستشفى المملكة</span></li>
-          <li><span class="near__min"><span class="num">29</span><small>دقيقة</small></span><span>مطار الملك خالد الدولي</span></li>
-          <li><span class="near__min"><span class="num">29</span><small>دقيقة</small></span><span>طريق الملك فهد</span></li>
+  <section class="sec split" id="warranty">
+    <div class="wrap split__grid">
+      <div class="split__col">
+        <header class="sec__head"><h2 class="label">الضمانات</h2></header>
+        <p class="h2">ضمانات تصل إلى <span class="num">25</span> سنة.</p>
+        <ul class="rows" id="rows">
+          <li style="--y:25"><span>الطبلونات والقواطع الكهربائية</span><b><span class="num">25</span> سنة</b><i></i></li>
+          <li style="--y:25"><span>الأفياش والمفاتيح</span><b><span class="num">25</span> سنة</b><i></i></li>
+          <li style="--y:5"><span>الأبواب</span><b><span class="num">5</span> سنوات</b><i></i></li>
+          <li style="--y:5"><span>مراوح الشفط</span><b><span class="num">5</span> سنوات</b><i></i></li>
+          <li style="--y:5"><span>الإنارة الداخلية</span><b><span class="num">5</span> سنوات</b><i></i></li>
+          <li style="--y:2"><span>المصاعد</span><b>سنتان</b><i></i></li>
+          <li style="--y:2"><span>الإنارة الخارجية</span><b>سنتان</b><i></i></li>
+          <li style="--y:2"><span>الأبواب والنوافذ الأوتوماتيكية</span><b>سنتان</b><i></i></li>
         </ul>
       </div>
+      <figure class="split__img" data-unveil><img src="assets/img/tall1.webp" alt="ثريا الصالة وإضاءة السقف" loading="lazy"></figure>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <section class="sec location" id="location">
+    <div class="wrap">
+      <header class="sec__head"><h2 class="label">الموقع</h2></header>
+      <p class="location__name">القادسية،<br>شرق الرياض.</p>
+      <ul class="near">
+        <li><span class="num">20</span><small>دقيقة</small><p>جامعة الأميرة نورة بنت عبدالرحمن</p></li>
+        <li><span class="num">27</span><small>دقيقة</small><p>مستشفى المملكة</p></li>
+        <li><span class="num">29</span><small>دقيقة</small><p>مطار الملك خالد الدولي</p></li>
+        <li><span class="num">29</span><small>دقيقة</small><p>طريق الملك فهد</p></li>
+      </ul>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A+%D8%A7%D9%84%D9%82%D8%A7%D8%AF%D8%B3%D9%8A%D8%A9+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener">افتح الحي في خرائط قوقل</a>
+    </div>
+  </section>
+
   <section class="contact" id="contact">
-    <div class="contact__media"><img src="assets/img/cta.webp" alt="" loading="lazy"></div>
-    <div class="contact__shade"></div>
     <div class="wrap contact__grid">
-      <div>
-        <h2 class="contact__title">احجز زيارتك للمشروع</h2>
-        <p class="contact__sub">اكتب بياناتك ونوع الوحدة التي تبحث عنها، وتصلنا رسالتك على واتساب مباشرة.</p>
-        <a class="contact__phone" href="tel:920014659"><small>أو اتصل بنا</small><span class="num">9200 14659</span></a>
+      <div class="contact__lead">
+        <h2 class="contact__title">احجز زيارتك<br>للمشروع.</h2>
+        <a class="contact__phone" href="tel:920014659"><small>اتصل بنا</small><span class="num">9200 14659</span></a>
       </div>
       <form class="form" id="form" novalidate>
-        <label>الاسم<input name="name" autocomplete="name" required></label>
-        <label>رقم الجوال<input name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05XXXXXXXX" required></label>
-        <label>نوع الوحدة
+        <label><span>الاسم</span><input name="name" autocomplete="name" required></label>
+        <label><span>رقم الجوال</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05XXXXXXXX" required></label>
+        <label><span>نوع الوحدة</span>
           <select name="type">
             <option>تاون هاوس</option>
             <option>بنتهاوس</option>
@@ -266,39 +231,31 @@
           </select>
         </label>
         <p class="form__err" id="formErr" role="alert" hidden>اكتب اسمك ورقم جوالك حتى نرسل الطلب.</p>
-        <button class="btn btn--amber btn--wide" type="submit">أرسل الطلب عبر واتساب</button>
+        <button class="btn btn--amber" type="submit">أرسل الطلب عبر واتساب</button>
       </form>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap foot__grid">
-    <img src="assets/manazel-logo.svg" alt="منازل العقارية" width="90" height="82">
-    <div class="foot__names">
-      <strong>شركة منازل العقارية</strong>
-      <span class="lat">MANAZEL COMPANY</span>
-    </div>
-    <nav class="foot__links" aria-label="روابط سريعة">
-      <a href="#project">المشروع</a>
-      <a href="#units">الوحدات والأسعار</a>
-      <a href="#location">الموقع</a>
-      <a href="#contact">سجّل اهتمامك</a>
-    </nav>
-  </div>
   <div class="foot__stripes" aria-hidden="true"></div>
-  <p class="foot__copy wrap">جميع الحقوق محفوظة لشركة منازل العقارية <span class="num">2026</span></p>
+  <div class="wrap foot__grid">
+    <img src="assets/manazel-logo.svg" alt="منازل العقارية" width="84" height="76">
+    <nav class="foot__links" aria-label="روابط سريعة">
+      <a href="#types">الوحدات</a>
+      <a href="#prices">الأسعار</a>
+      <a href="#gallery">الصور</a>
+      <a href="#location">الموقع</a>
+      <a href="#contact">احجز زيارة</a>
+    </nav>
+    <p class="foot__copy">شركة منازل العقارية <span class="num">2026</span></p>
+  </div>
 </footer>
 
-<a class="wa" id="wa" href="https://wa.me/966920014659" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
-  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.600L3 21l4.600-1.200A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.900" stroke-linejoin="round"/><path d="M9 8.500c-.5 1 0 2.700 1.700 4.400 1.700 1.700 3.400 2.200 4.400 1.700l.6-1.100-1.800-1-.8.700c-.7-.3-1.900-1.500-2.200-2.200l.7-.8-1-1.800z" fill="currentColor"/></svg>
-</a>
+<div class="cursor" id="cursor" aria-hidden="true">اسحب</div>
 
 <dialog class="lightbox" id="lightbox" aria-label="عرض الصورة">
-  <button class="lightbox__close" id="lbClose" aria-label="إغلاق">
-    <svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  </button>
-  <img id="lbImg" src="" alt="">
+  <button class="lightbox__close" id="lbClose" aria-label="إغلاق"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.2"/></svg></button>
 </dialog>
 
 <script src="assets/app.js"></script>
