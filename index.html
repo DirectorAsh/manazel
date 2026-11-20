@@ -26,12 +26,30 @@
     <a href="#location">الموقع</a>
   </nav>
   <a class="btn nav__cta" href="#contact">احجز زيارة</a>
+  <button class="nav__menu" id="menuBtn" aria-expanded="false" aria-controls="menu">القائمة</button>
 </header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="القائمة">
+    <a href="#types">الوحدات</a>
+    <a href="#prices">الأسعار</a>
+    <a href="#gallery">الصور</a>
+    <a href="#warranty">الضمانات</a>
+    <a href="#location">الموقع</a>
+    <a href="#contact">احجز زيارة</a>
+  </nav>
+  <a class="menu__phone num" href="tel:920014659">9200 14659</a>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <main id="top">
 
   <section class="hero">
-    <div class="hero__media"><img src="assets/img/hero.webp" alt="واجهات مشروع زرقاء اليمامة وقت الغروب" fetchpriority="high"></div>
+    <div class="hero__media" id="heroMedia">
+      <div class="hero__slide is-on"><img src="assets/img/hero.webp" alt="واجهات مشروع زرقاء اليمامة وقت الغروب" fetchpriority="high"></div>
+      <div class="hero__slide"><img src="assets/img/cta.webp" alt="" loading="lazy"></div>
+      <div class="hero__slide"><img src="assets/img/g9.webp" alt="" loading="lazy"></div>
+    </div>
     <div class="hero__body wrap">
       <h1 class="hero__title"><span><i>زرقاء</i></span> <span><i>اليمامة</i></span></h1>
       <div class="hero__foot">
@@ -150,7 +168,8 @@
     </div>
   </section>
 
-  <section class="sec gallery" id="gallery">
+  <section class="gallery" id="gallery">
+   <div class="gallery__stage">
     <div class="wrap">
       <header class="sec__head">
         <h2 class="label">الصور</h2>
@@ -175,6 +194,7 @@
       <button class="shot shot--tall"><img src="assets/img/g11.webp" alt="مغسلة رخامية" loading="lazy"></button>
       <button class="shot"><img src="assets/img/g12.webp" alt="المشروع نهارًا" loading="lazy"></button>
     </div>
+   </div>
   </section>
 
   <section class="sec split" id="warranty">
@@ -238,7 +258,6 @@
 </main>
 
 <footer class="foot">
-  <div class="foot__stripes" aria-hidden="true"></div>
   <div class="wrap foot__grid">
     <img src="assets/manazel-logo.svg" alt="منازل العقارية" width="84" height="76">
     <nav class="foot__links" aria-label="روابط سريعة">
@@ -250,14 +269,18 @@
     </nav>
     <p class="foot__copy">شركة منازل العقارية <span class="num">2026</span></p>
   </div>
+  <div class="wrap"><img class="foot__word" src="assets/manazel-wordmark.svg" alt="" aria-hidden="true"></div>
+  <div class="foot__stripes" aria-hidden="true"></div>
 </footer>
 
 <div class="cursor" id="cursor" aria-hidden="true">اسحب</div>
+<div class="peek" id="peek" aria-hidden="true"><img src="assets/img/th.webp" alt=""></div>
 
 <dialog class="lightbox" id="lightbox" aria-label="عرض الصورة">
   <button class="lightbox__close" id="lbClose" aria-label="إغلاق"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.2"/></svg></button>
 </dialog>
 
+<script src="assets/lenis.min.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
